@@ -42,6 +42,7 @@ ORDER: Base + Typography > Generar Layout + Grid > Page Layout > Components
     @media (max-width: 75em) {
       @content;
     } //1200px
+    
   }
   // Big Desktop
   @if $breakpoint == big-desktop {
@@ -81,3 +82,40 @@ ORDER: Base + Typography > Generar Layout + Grid > Page Layout > Components
     @content;
   }
 }
+
+
+@media (min-width: 768px) {
+  .col-mod {
+    width: 50%;
+align-content: center;
+    flex: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .col-mod2 {
+    width: auto;
+align-content: center;
+    flex: none;
+    text-align: center;
+  }
+ 
+}
+
+@media (max-width: 37.5em) {
+  .social-links2 {
+ justify-content: center;
+  }
+}
+
+@media (max-width: 48em) {
+  .social-links2 {
+ justify-content: center;
+  }
+}
+@media (max-width: 75em) {
+  .social-links2 {
+ justify-content: center;
+  }
+}
+
